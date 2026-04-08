@@ -20,7 +20,7 @@ print("Dataset loaded successfully.")
 target = 'ProdTaken'
 
 # Drop the unique identifier column
-df.drop(columns=['customer_id'], inplace=True)
+df.drop(columns=['CustomerID'], inplace=True)
 
 # List of numerical features in the dataset
 numeric_features = [
