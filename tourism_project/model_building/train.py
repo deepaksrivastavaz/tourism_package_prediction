@@ -16,7 +16,9 @@ from huggingface_hub import login, HfApi, create_repo
 from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 import mlflow
 
-mlflow.set_tracking_uri("http://localhost:5000")
+# mlflow.set_tracking_uri("http://localhost:5000")
+# Temporary testing of a public url to see whether it's emitting data
+mlflow.set_tracking_uri("https://chartless-samiyah-ineradicably.ngrok-free.dev")
 mlflow.set_experiment("mlops-training-experiment")
 
 api = HfApi()
